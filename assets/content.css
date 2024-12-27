@@ -1,0 +1,115 @@
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh 5vw;
+    position: relative;
+    justify-content: center;
+}
+
+.card {
+    margin: 70px 50px;
+    display: flex;
+    /* flex: 250px; */
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 20px groove #d72626;
+    width: 250px;
+    transform: skewY(-15deg);
+    transition: all .2s ease;
+    -webkit-box-shadow: -22px 14px 47px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -22px 14px 47px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -22px 14px 47px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "-";
+    position: absolute;
+    background-color: #7e0f0f;
+    color: #7e0f0f;
+    width: 50px;
+    height: 170px;
+    transform: skewY(45deg);
+    left: -70px;
+    top: -45px;
+}
+
+.card::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "-";
+    position: absolute;
+    background-color: #df3d3d;
+    color: #df3d3d;
+    width: 50px;
+    height: 290px;
+    transform: skewX(45deg) rotate(90deg);
+    top: -190px;
+    left: 75px;
+}
+
+.card h1 {
+    font-size: 30px;
+    margin: 0px 10px 0 10px
+}
+
+.card:hover {
+    animation: cima 2s infinite;
+    -webkit-box-shadow: -20px 42px 131px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: -20px 42px 131px -35px rgba(0,0,0,0.75);
+    box-shadow: -20px 42px 131px -35px rgba(0,0,0,0.75);
+}
+
+.card img{
+    -webkit-filter: drop-shadow(0px 20px 15px #222);
+    filter: drop-shadow(0px 20px 15px #222);
+}
+
+@keyframes cima {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    50% {
+        transform: translateY(-2vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+@media (max-width:432px) {
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5vh 10px;
+        position: relative;
+        justify-content: center;
+    }
+}
+
+@media (max-width:410px) {
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5vh 6px;
+        position: relative;
+        justify-content: center;
+    }
+}
+
+@media (max-width:401px) {
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5vh 1.2vw;
+        position: relative;
+        justify-content: center;
+    }
+}

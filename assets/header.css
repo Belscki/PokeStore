@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 5px solid black;
+}
+
+header div{
+    background-image: url("https://archives.bulbagarden.net/media/upload/thumb/d/d7/Pokemonstore2.png/300px-Pokemonstore2.png");
+    background-repeat: no-repeat;
+    padding: 0px 150px 150px 150px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.search-container i{
+    color: #fff;
+    margin-left: 2vw;
+}
+
+.search-container input{
+    font-size: 20px;
+    width: 30vw;
+}
